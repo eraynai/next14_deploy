@@ -18,10 +18,12 @@ export default function AboutPage() {
       {/* Container */}
      <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
       {/* Text Container */}
-        <div className="p-4 sm:px-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 w-2/3 xl:1/2 xl:gap-64 lg:w-2/3 lg:pr-0">
+        <div className="p-4 sm:px-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 w-full xl:1/2 xl:gap-64 xl:w-2/3 lg:pr-0">
           {/* Bio Container */}
           <div className="flex flex-col gap-12 justify-center">
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+          <motion.h1 initial={{x:"-300px"}} animate={isSkillRefInView ? {x:0} : {}} transition={{ delay: 0.2 }} className="font-bold text-2xl">
+              BIOGRAPHY
+            </motion.h1>
             <p>I am a full stack web developer with a passion for creating interactive and responsive web applications. I am passionate about building e-commerce applications, specifically on the Shopify platform. I have experience working with JavaScript, React, Liquid, Node.js, Express, GraphQL, HTML, CSS, Git, and AWS.</p>
             
             <motion.svg
@@ -97,146 +99,100 @@ export default function AboutPage() {
             </div>
           {/* Experience Container */}
           <div className="flex flex-col gap-12 justify-center pb-48" ref={experienceRef}>
-          {/* Experience Title */}
-            <motion.h1 initial={{x:"-300px"}} animate={isExperienceRefInView ? {x:"0"} : {}} transition={{delay:0.2}} className="font-bold text-2xl">
+    {/* Experience Title */}
+    <motion.h1 initial={{x:"-300px"}} animate={isSkillRefInView ? {x:0} : {}} transition={{ delay: 0.2 }} className="font-bold text-2xl">
               EXPERIENCE
             </motion.h1>
-            {/* Experience List */}
-            <motion.div
-              initial={{ x: "-300px" }}
-              animate={isExperienceRefInView ? { x: "0" } : {}}
-              className=""
-            >
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+    {/* Experience List */}
+    <motion.div initial={{ x: "-300px" }} animate={isExperienceRefInView ? { x: "0" } : {}}>
+        {/* EXPERIENCE LIST ITEM */}
+        <div className="flex flex-col gap-8 md:flex-row justify-between md:items-center">
+            {/* Experience Entry - Fullstack Developer/Designer */}
+            <div className="w-full space-y-2">
+                {/* JOB TITLE */}
+                <div className="bg-white p-3 font-semibold rounded-lg w-fit">
                     Fullstack Developer/Designer
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                  Expert in designing and developing custom Shopify websites, ready to offer complete redesigns and ground-up builds. My blend of design sensibility and technical skill prepares me to create online stores that are visually compelling, user-friendly, SEO-optimized, and tailored to reflect each brand's unique identity, aiming to enhance user engagement and brand visibility.
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                </div>
+                {/* JOB DESC */}
+                <div className="p-2 italic">
+                    Expert in designing and developing custom Shopify websites, ready to offer complete redesigns and ground-up builds. My blend of design sensibility and technical skill prepares me to create online stores that are visually compelling, user-friendly, SEO-optimized, and tailored to reflect each brand's unique identity, aiming to enhance user engagement and brand visibility.
+                </div>
+                {/* JOB DATE */}
+                <div className="p-3 text-red-400 text-sm font-semibold">
                     October 2023 - Present
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                </div>
+                {/* JOB COMPANY */}
+                <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                     Multitouch
-                  </div>
                 </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
+            </div>
+        </div>
+        <div className="flex py-8 flex-col gap-8 md:flex-row justify-between">
+            {/* Experience Entry - Fullstack Developer/Designer */}
+            <div className="w-full space-y-2">
+                {/* JOB TITLE */}
+                <div className="bg-white p-3 font-semibold rounded-lg w-fit">
+                Full Stack Developer
                 </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 "></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
+                {/* JOB DESC */}
+                <div className="p-2 italic">
+                Spearheaded the development and enhancement of over 15 custom e-commerce websites for small to medium-sized business clients, utilizing Shopify, HTML, CSS, JavaScript, and Liquid. Delivered bespoke features tailored to client specifications, resulting in improved business operations, enhanced customer engagement, and increased sales.
                 </div>
-                {/* RIGHT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                   Full Stack Developer
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                  Spearheaded the development and enhancement of over 15 custom e-commerce websites for small to medium-sized business clients, utilizing Shopify, HTML, CSS, JavaScript, and Liquid. Delivered bespoke features tailored to client specifications, resulting in improved business operations, enhanced customer engagement, and increased sales.
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                  March 2023 - September 2023
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                  Acorn Strategy
-                  </div>
+                {/* JOB DATE */}
+                <div className="p-3 text-red-400 text-sm font-semibold">
+                March 2023 - September 2023
                 </div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Full Stack Developer
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                  As the pivotal Full Stack Developer for a pioneering legal education simulation, I expertly led the architecture, development, and deployment of a React-based web app, revolutionizing learning for legal industry students.
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                  January 2023 - March 2023
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                  Stitch Media
-                  </div>
+                {/* JOB COMPANY */}
+                <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                Acorn Strategy
                 </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
+            </div>
+        </div>
+        <div className="flex py-8 flex-col gap-8 md:flex-row justify-between">
+            {/* Experience Entry - Fullstack Developer/Designer */}
+            <div className="w-full space-y-2">
+                {/* JOB TITLE */}
+                <div className="bg-white p-3 font-semibold rounded-lg w-fit">
+                Full Stack Developer
                 </div>
-                
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
-              </div>
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 "></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
+                {/* JOB DESC */}
+                <div className="p-2 italic">
+                As the pivotal Full Stack Developer for a pioneering legal education simulation, I expertly led the architecture, development, and deployment of a React-based web app, revolutionizing learning for legal industry students.               
                 </div>
-                {/* RIGHT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Front End Developer
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                  As a vital member of the digital team at Armstrong Partnership, I excelled in transforming complex designs into interactive microsites using vanilla JavaScript, HTML, and CSS.
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                  November 2021 - January 2023
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                  Armstrong Partnership
-                  </div>
+                {/* JOB DATE */}
+                <div className="p-3 text-red-400 text-sm font-semibold">
+                January 2023 - March 2023
                 </div>
-              </div>
-            </motion.div>
-          </div>
+                {/* JOB COMPANY */}
+                <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                Stitch Media
+                </div>
+            </div>
+        </div>
+        <div className="flex py-8 flex-col gap-8 md:flex-row justify-between">
+            {/* Experience Entry - Fullstack Developer/Designer */}
+            <div className="w-full space-y-2">
+                {/* JOB TITLE */}
+                <div className="bg-white p-3 font-semibold rounded-lg w-fit">
+                Front End Developer
+                </div>
+                {/* JOB DESC */}
+                <div className="p-2 italic">
+                As a vital member of the digital team at Armstrong Partnership, I excelled in transforming complex designs into interactive microsites using vanilla JavaScript, HTML, and CSS.                
+                </div>
+                {/* JOB DATE */}
+                <div className="p-3 text-red-400 text-sm font-semibold">
+                November 2021 - January 2023
+                </div>
+                {/* JOB COMPANY */}
+                <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                Armstrong Partnership
+                </div>
+            </div>
+        </div>
+    </motion.div>
+</div>
+
         </div>
         {/* SVG Container */}
         <div className="hidden sticky lg:block w-1/3 xl:1/2 top-0 z-30">
