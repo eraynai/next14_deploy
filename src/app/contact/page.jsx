@@ -33,7 +33,7 @@ export default function ContactPage() {
 
   return (
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{ duration: 1}}>
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row px-4  sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* Text Container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-4xl xl:text-6xl">
           <div>
@@ -46,9 +46,9 @@ export default function ContactPage() {
           </div>
         </div>
         {/* Form Container */}
-        <form onSubmit={sendEmail} ref={form} className="h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-24 mt-3 mb-3 xl:mt-0  justify-center p-14 xl:p-24">
+        <form onSubmit={sendEmail} ref={form} className="lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-24 mt-4 mb-6 xl:mb-0 justify-center p-14 xl:p-24">
           <span>Dear Elli,</span>
-          <textarea rows={6} className="bg-transparent border-b-2 border-b-black outline-none resize-y" name="user_message"/>
+          <textarea rows={6} className="bg-transparent border-b-2 border-b-black outline-none resize-none" name="user_message"/>
           <span>My mail address is:</span>
           <input type="text" className="bg-transparent border-b-2 border-b-black outline-none" name="user_email"/>
           <span>Regards</span>
