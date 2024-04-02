@@ -83,11 +83,15 @@ export default function Navbar() {
                 </Link>
             </div>
             <div className="hidden md:flex justify-end gap-4 w-1/3">
-                <Link href="/">
+                <Link href="https:///www.github.com/eraynai" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
                     <Image src="/github.png" alt="" width={24} height={24} />
+                </a>
                 </Link>
-                <Link href="/">
+                <Link href="https://www.linkedin.com/in/elliraynai/" legacyBehavior>
+                    <a target="_blank" rel="noopener noreferrer">
                     <Image src="/linkedin.png" alt="" width={24} height={24} />
+                    </a>
                 </Link>
             </div>
             {/* Responsive Menu */}
