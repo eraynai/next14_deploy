@@ -136,7 +136,7 @@ const PortfolioPage = () => {
                         src={item.img} 
                         alt={item.title} 
                         fill 
-                        style={{ objectFit: 'cover' }} // Use 'contain' for full image without cropping.
+                        style={{ objectFit: 'cover' }}
                       />
                     </div>
 
