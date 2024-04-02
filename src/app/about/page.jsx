@@ -23,7 +23,7 @@ export default function AboutPage() {
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p>I am a full stack web developer with a passion for creating interactive and responsive web applications. I am passionate about building e-commerce applications, specifically on the Shopify platform. I have experience working with JavaScript, React, Liquid, Node.js, Express, GraphQL, HTML, CSS, Git, and AWS.</p>
-            {/* <span className="italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, exercitationem quis quibusdam et veritatis, consequuntur ullam obcaecati fuga repellendus consequatur, aspernatur aut rerum pariatur illum officiis molestiae nulla eaque aperiam.</span> */}
+            
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -117,7 +117,7 @@ export default function AboutPage() {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  Expert in designing and developing custom Shopify websites, ready to offer complete redesigns and ground-up builds. My blend of design sensibility and technical skill prepares me to create online stores that are visually compelling, user-friendly, SEO-optimized, and tailored to reflect each brand's unique identity, aiming to enhance user engagement and brand visibility.{" "}
+                  Expert in designing and developing custom Shopify websites, ready to offer complete redesigns and ground-up builds. My blend of design sensibility and technical skill prepares me to create online stores that are visually compelling, user-friendly, SEO-optimized, and tailored to reflect each brand's unique identity, aiming to enhance user engagement and brand visibility.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -159,11 +159,11 @@ export default function AboutPage() {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  Spearheaded the development and enhancement of over 15 custom e-commerce websites for small to medium-sized business clients, utilizing Shopify, HTML, CSS, JavaScript, and Liquid. Delivered bespoke features tailored to client specifications, resulting in improved business operations, enhanced customer engagement, and increased sales.{" "}
+                  Spearheaded the development and enhancement of over 15 custom e-commerce websites for small to medium-sized business clients, utilizing Shopify, HTML, CSS, JavaScript, and Liquid. Delivered bespoke features tailored to client specifications, resulting in improved business operations, enhanced customer engagement, and increased sales.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                  March 2023 - September 2023{" "}
+                  March 2023 - September 2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -177,15 +177,15 @@ export default function AboutPage() {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  Full Stack Developer{" "}
+                  Full Stack Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  As the pivotal Full Stack Developer for a pioneering legal education simulation, I expertly led the architecture, development, and deployment of a React-based web app, revolutionizing learning for legal industry students.{" "}
+                  As the pivotal Full Stack Developer for a pioneering legal education simulation, I expertly led the architecture, development, and deployment of a React-based web app, revolutionizing learning for legal industry students.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                  January 2023 - March 2023{" "}
+                  January 2023 - March 2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -223,11 +223,11 @@ export default function AboutPage() {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  As a vital member of the digital team at Armstrong Partnership, I excelled in transforming complex designs into interactive microsites using vanilla JavaScript, HTML, and CSS.{" "}
+                  As a vital member of the digital team at Armstrong Partnership, I excelled in transforming complex designs into interactive microsites using vanilla JavaScript, HTML, and CSS.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                  November 2021 - January 2023{" "}
+                  November 2021 - January 2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
