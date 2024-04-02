@@ -46,9 +46,9 @@ export default function ContactPage() {
           </div>
         </div>
         {/* Form Container */}
-        <form onSubmit={sendEmail} ref={form} className="h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-24 mt-3 xl:mt-0  justify-center p-14 xl:p-24">
+        <form onSubmit={sendEmail} ref={form} className="h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-24 mt-3 mb-3 xl:mt-0  justify-center p-14 xl:p-24">
           <span>Dear Elli,</span>
-          <textarea rows={6} className="bg-transparent border-b-2 border-b-black outline-none resize-none" name="user_message"/>
+          <textarea rows={6} className="bg-transparent border-b-2 border-b-black outline-none resize-y" name="user_message"/>
           <span>My mail address is:</span>
           <input type="text" className="bg-transparent border-b-2 border-b-black outline-none" name="user_email"/>
           <span>Regards</span>
