@@ -14,9 +14,9 @@ const Homepage = () => {
         {/* Text Container */}
         <div className="h-1/2 flex lg:h-full lg:w-1/2 flex-col gap-8 items-center justify-center">
           {/* Title */}
-          <h1 className="text-4xl md:text-6xl font-bold">Crafting Digital Experiences</h1>
+          <h1 className="text-4xl md:text-6xl font-bold">Full Stack Developer with a Flair for Design</h1>
           {/* Desc */}
-          <p className="md:textxl">Welcome to my digital canvas, where innovation and creativity converge.</p>
+          <p className="md:textxl">My name is Elli and I'm a web developer who is passionate about finding solutions and collaborating on projects of all shapes and sizes.</p>
           {/* Buttons */}
           <div className="w-full flex gap-4 justify-center">
             <Link href="/portfolio">
